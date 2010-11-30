@@ -74,7 +74,7 @@ namespace Castle.ActiveRecord.Tests
             String expected =
                 "<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n"+
                 "<hibernate-mapping  auto-import=\"true\" default-lazy=\"false\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"urn:nhibernate-mapping-2.2\">\r\n"+
-                "  <class name=\"Castle.ActiveRecord.Tests.Model.RulesModel.PersistedRule, Castle.ActiveRecord.Tests\" table=\"PersistedRule\" discriminator-value=\"0\" lazy=\"false\">\r\n"+
+                "  <class name=\"Castle.ActiveRecord.Tests.Model.RulesModel.PersistedRule, Castle.ActiveRecord.Tests, Version=2.1.2.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc\" table=\"PersistedRule\" discriminator-value=\"0\" lazy=\"false\">\r\n"+
                 "    <id name=\"Id\" access=\"property\" column=\"Id\" type=\"Int32\" unsaved-value=\"0\">\r\n"+
                 "      <generator class=\"native\">\r\n"+
                 "      </generator>\r\n"+
@@ -83,7 +83,7 @@ namespace Castle.ActiveRecord.Tests
                 "    <property name=\"Count\" access=\"property\" type=\"Int32\">\r\n"+
                 "      <column name=\"Count\"/>\r\n" + 
                 "    </property>\r\n" +
-                "    <subclass name=\"Castle.ActiveRecord.Tests.Model.RulesModel.WorkDaysRules, Castle.ActiveRecord.Tests\" discriminator-value=\"2\" lazy=\"false\">\r\n"+
+                "    <subclass name=\"Castle.ActiveRecord.Tests.Model.RulesModel.WorkDaysRules, Castle.ActiveRecord.Tests, Version=2.1.2.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc\" discriminator-value=\"2\" lazy=\"false\">\r\n"+
                 "      <property name=\"Name\" access=\"property\" type=\"String\">\r\n"+
 				"        <column name=\"Name\"/>\r\n" + 
 				"      </property>\r\n" +
