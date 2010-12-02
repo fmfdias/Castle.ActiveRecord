@@ -1206,7 +1206,7 @@ namespace Castle.ActiveRecord.Framework.Internal
 			}
 			else
 			{
-				string assemblyName = new AssemblyName(type.Assembly.FullName).Name;
+				string assemblyName = new AssemblyName(type.Assembly.FullName).FullName;
 				return MakeAtt(attName, type.FullName + ", " + assemblyName);
 			}
 		}
@@ -1363,14 +1363,13 @@ namespace Castle.ActiveRecord.Framework.Internal
 		}
 
 		/// <summary>
-		/// Create a valid name from a type, without including all the version and public key
-		/// information
+		/// Create a valid name from a type, including version and public key information when it applies.
 		/// </summary>
 		public static String MakeTypeName(Type type)
 		{
 			if (type == null) return null;
 
-			string assemblyName = new AssemblyName(type.Assembly.FullName).Name;
+			string assemblyName = new AssemblyName(type.Assembly.FullName).FullName;
 			return String.Format("{0}, {1}", type.FullName, assemblyName);
 		}
 

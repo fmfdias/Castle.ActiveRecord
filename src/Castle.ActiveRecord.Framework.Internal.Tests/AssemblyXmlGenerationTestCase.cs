@@ -33,7 +33,7 @@ namespace Castle.ActiveRecord.Framework.Internal.Tests
 			string expected = "<?xml version=\"1.0\" encoding=\"utf-16\"?>" +
 	"<hibernate-mapping  xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"" +
 	" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"urn:nhibernate-mapping-2.2\">" +
-	"<import class=\"Castle.ActiveRecord.Framework.Internal.Tests.ImportClassRow, Castle.ActiveRecord.Framework.Internal.Tests\" rename=\"ImportClassRow\"/>\r\n" +
+	"<import class=\"Castle.ActiveRecord.Framework.Internal.Tests.ImportClassRow, Castle.ActiveRecord.Framework.Internal.Tests, Version=2.1.2.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc\" rename=\"ImportClassRow\"/>\r\n" +
 	"	<query name='allAdultUsers'>\r\n" +
 	"		 <![CDATA[from User user where user.Age > 21]]>\r\n" +
 	"	 </query>\r\n" +

@@ -48,7 +48,7 @@ namespace Castle.ActiveRecord.Tests
 			String expected =
 				"<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n" +
 				"<hibernate-mapping  auto-import=\"true\" default-lazy=\"false\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"urn:nhibernate-mapping-2.2\">\r\n" +
-				"  <class name=\"Castle.ActiveRecord.Tests.Model.AnyModel.Order, Castle.ActiveRecord.Tests\" table=\"Orders\">\r\n" +
+				"  <class name=\"Castle.ActiveRecord.Tests.Model.AnyModel.Order, Castle.ActiveRecord.Tests, Version=2.1.2.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc\" table=\"Orders\">\r\n" +
 				"    <id name=\"Id\" access=\"property\" column=\"Id\" type=\"Int32\" unsaved-value=\"0\">\r\n" +
 				"      <generator class=\"native\">\r\n" +
 				"      </generator>\r\n" +
@@ -56,8 +56,8 @@ namespace Castle.ActiveRecord.Tests
 				"    <bag name=\"Payments\" access=\"property\" table=\"payments_table\" lazy=\"false\">\r\n" +
 				"      <key column=\"pay_id\" />\r\n" +
 				"      <many-to-any id-type=\"Int32\" meta-type=\"System.String\">\r\n" +
-				"        <meta-value value=\"BANK_ACCOUNT\" class=\"Castle.ActiveRecord.Tests.Model.AnyModel.BankAccounts, Castle.ActiveRecord.Tests\" />\r\n" +
-				"        <meta-value value=\"CREDIT_CARD\" class=\"Castle.ActiveRecord.Tests.Model.AnyModel.CreditCards, Castle.ActiveRecord.Tests\" />\r\n" +
+				"        <meta-value value=\"BANK_ACCOUNT\" class=\"Castle.ActiveRecord.Tests.Model.AnyModel.BankAccounts, Castle.ActiveRecord.Tests, Version=2.1.2.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc\" />\r\n" +
+				"        <meta-value value=\"CREDIT_CARD\" class=\"Castle.ActiveRecord.Tests.Model.AnyModel.CreditCards, Castle.ActiveRecord.Tests, Version=2.1.2.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc\" />\r\n" +
 				"        <column name=\"Billing_Details_Type\" />\r\n" +
 				"        <column name=\"Billing_Details_Id\" />\r\n" +
 				"      </many-to-any>\r\n" +
